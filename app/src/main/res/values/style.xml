@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/robotoregular</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/_24sdp</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="prefixTextAppearance">?attr/textAppearanceSubtitle1</item>
+        <item name="boxStrokeColor">@color/box_stroke_color_selector</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="TextInputLayoutExposedDropdownIcon">
+        <item name="endIconMode">custom</item>
+        <item name="endIconDrawable">@drawable/ic_dropdown</item>
+    </style>
+    <style name="BadgeStyle" parent="@style/Widget.Material3.Badge">
+        <item name="backgroundColor">@color/primary_red</item>
+        <item name="badgeTextColor">@android:color/white</item>
+        <item name="maxCharacterCount">3</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="FullWidthDialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="OutlinedChip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_background_color_selector</item>
+        <item name="chipStrokeColor">@color/outline_color</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="closeIcon">@drawable/ic_sharp_close_24</item>
+        <item name="closeIconTint">@color/chip_close_icon_tint</item>
+    </style>
+
+    <style name="OutlinedChip.Action" parent="OutlinedChip.Choice">
+        <item name="android:checkable">false</item>
+    </style>
+
+    <style name="OutlinedChip.Entry" parent="OutlinedChip.Choice">
+        <item name="closeIconVisible">true</item>
+        <item name="android:checkable">false</item>
+    </style>
+
+    <style name="TextChip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:background">@drawable/bg_chip_text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+
+    <style name="MaterialCardViewFilledStyle" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">?attr/colorSecondaryContainer</item>
+    </style>
+
+    <style name="ExposedDropdownMenuStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/box_stroke_color_selector</item>
+    </style>
+
+    <style name="NavigationHeaderStyle">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.Material3.Toolbar.Surface">
+        <item name="navigationIcon">@drawable/ic_baseline_arrow_back_24</item>
+    </style>
+
+    <style name="ActionOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="tint">@android:color/black</item>
+    </style>
+
+    <style name="FloatingActionButton" parent="@style/Widget.Material3.FloatingActionButton.Surface">
+        <item name="tint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ExtendedFloatingActionButton" parent="@style/Widget.Material3.ExtendedFloatingActionButton.Surface">
+        <item name="iconTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?attr/dividerHorizontal</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.MaterialComponents.Light">
+        <item name="colorControlActivated">@color/primary_yellow</item>
+    </style>
+
+    <style name="RoundedCardView" parent="Theme.BDTrainPOS">
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="BoldText">
+        <item name="fontFamily">@font/robotobold</item>
+    </style>
+
+    <style name="ModalSheetAnimationStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_sheet_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_sheet_slide_out</item>
+    </style>
+
+    <style name="RoundedBackground" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">15dp</item>
+        <item name="cornerSizeTopLeft">15dp</item>
+        <item name="cornerSizeBottomRight">15dp</item>
+        <item name="cornerSizeBottomLeft">15dp</item>
+    </style>
+
+</resources>

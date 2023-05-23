@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="36dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/trainNameAndNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotobold"
+                android:maxLines="1"
+                android:text="Banalata Express 701"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/ticketTypeTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="on board excess fair ticket"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/trainNameAndNumber" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/eftLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:text="Eft No.:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ticketTypeTextView" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/eftNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="DHKDHK378386383683"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/eftLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/eftLabel"
+                app:layout_constraintTop_toTopOf="@+id/eftLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dateTimeLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:text="Date &amp; Time: "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/eftLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dateTimeTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="13 May 2023, 10:30pm"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/dateTimeLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dateTimeLabel"
+                app:layout_constraintTop_toTopOf="@+id/dateTimeLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/classLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:text="Class:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dateTimeLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/classTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="S_Chair"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/classLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/classLabel"
+                app:layout_constraintTop_toTopOf="@+id/classLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/fareLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:text="Fare:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/classLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/fareTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="Dhaka - Pabna"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/fareLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fareLabel"
+                app:layout_constraintTop_toTopOf="@+id/fareLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/excessFareLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:text="Excess Fare:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fareLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/excessFareTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="Dhaka bimanbandar"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/excessFareLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/excessFareLabel"
+                app:layout_constraintTop_toTopOf="@+id/excessFareLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/detLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:text="Det:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/excessFareLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/detTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="Dhaka - WT"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/detLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/detLabel"
+                app:layout_constraintTop_toTopOf="@+id/detLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/refLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:text="Reference(PNR):"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/deteTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="DHK66657657657"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/refLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/refLabel"
+                app:layout_constraintTop_toTopOf="@+id/refLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/passengerNumberLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:text="Passenger No.:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/refLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/passengerNumberTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/passengerNumberLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/passengerNumberLabel"
+                app:layout_constraintTop_toTopOf="@+id/passengerNumberLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/fareAmountLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:text="Fare Amount:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passengerNumberLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/fareAmountTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="1000 BDT"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/fareAmountLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/fareAmountLabel"
+                app:layout_constraintTop_toTopOf="@+id/fareAmountLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/excessFareAmountLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:text="Excess Fare Amount:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fareAmountLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/excessFareAmountTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="100 BDT"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/excessFareAmountLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/excessFareAmountLabel"
+                app:layout_constraintTop_toTopOf="@+id/excessFareAmountLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/totalAmountLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotoregular"
+                android:maxLines="1"
+                android:text="Total Amount:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/excessFareAmountLabel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/totalAmountTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotorobotomedium"
+                android:maxLines="1"
+                android:text="1100 BDT"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/totalAmountLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/totalAmountLabel"
+                app:layout_constraintTop_toTopOf="@+id/totalAmountLabel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
