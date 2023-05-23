@@ -78,4 +78,10 @@ dependencies {
 
     //Compose UI preview for all build variants
     debugImplementation "androidx.compose.ui:ui-tooling"
+
+    //lotti compose
+    implementation 'com.airbnb.android:lottie-compose:5.2.0'
+    implementation "com.airbnb.android:lottie:5.2.0"
+
+    implementation "com.intuit.sdp:sdp-android:1.0.6"
 }

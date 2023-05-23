@@ -118,4 +118,16 @@
         <item name="cornerSizeBottomLeft">15dp</item>
     </style>
 
+    <style name="MyButton" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearance">@style/RoundedButton</item>
+    </style>
+
+    <style name="RoundedButton">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">32dp</item>
+        <item name="cornerSizeBottomRight">32dp</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeBottomLeft">32dp</item>
+    </style>
+
 </resources>
